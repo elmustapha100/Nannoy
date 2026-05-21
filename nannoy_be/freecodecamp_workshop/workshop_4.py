@@ -29,3 +29,29 @@ User stories:
 7. if the distance is greater  than 6 miles :
     . print True if the person has a car or has a ride_share_app.
     . otherwise ,you should print False               
+"""
+
+distance_mi = int(input("How many miles is your journey : "))
+is_raining = True 
+has_bike = True
+has_car = True 
+has_ride_share_app = False
+
+distance_mi = int(input("How many miles is your journey : "))
+is_raining = True 
+has_bike = True
+has_car = True 
+has_ride_share_app = False
+
+if distance_mi == 0 : 
+    print(False)
+elif distance_mi <= 1 and is_raining: 
+    print(True)
+elif distance_mi >= 1 and distance_mi <= 6 :
+    if has_bike and not is_raining :
+        print(True)
+elif distance_mi > 6 :
+    if has_car or has_ride_share_app :
+        print(True)         
+else : 
+    print(False)        
