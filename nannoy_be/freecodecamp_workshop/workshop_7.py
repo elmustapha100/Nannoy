@@ -5,10 +5,12 @@ empty_dot = '○'
 def create_character(name, strength, intelligence, charisma):
     if not isinstance(name, str):
         return "The character name should be a string"
-    if name == "":
+    if name == "" :
         return "The character should have a name"
+     
     if len(name) > 10:
-        return "The character name is too long"
+         return "The character name is too long"
+     
     if " " in name:
         return "The character name should not contain spaces"
 
@@ -22,18 +24,19 @@ def create_character(name, strength, intelligence, charisma):
         if stat > 4:
             return "All stats should be no more than 4"
 
-    if sum(stats) != 7:
-        return "The character should start with 7 points"
+        if sum(stats) != 7:
+            return "The character should start with 7 points"
 
     return "\n".join([
         name,
-        "STR " + full_dot * strength + empty_dot * (10 - strength),
+       "STR " + full_dot * strength + empty_dot * (10 - strength),
         "INT " + full_dot * intelligence + empty_dot * (10 - intelligence),
-        "CHA " + full_dot * charisma + empty_dot * (10 - charisma),
-    ])
+      "CHA " + full_dot * charisma + empty_dot * (10 - charisma),
+     ])
 
 
-# Backward-compatible alias used in the earlier workshop version.
+ #Backward-compatible alias used in the earlier workshop version.
 
 result = create_character('ren',4,2,1)
 print(result)
+
