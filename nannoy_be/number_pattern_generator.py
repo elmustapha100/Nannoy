@@ -26,6 +26,8 @@ def number_pattern(n):
             result += " " + str(i)
     return result 
 
-result = number_pattern(20)
-print(result) 
+if __name__ == "__main__":     
+
+    result = number_pattern(20)
+    print(result) 
 
