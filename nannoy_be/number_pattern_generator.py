@@ -12,22 +12,20 @@
 # If the argument passed to the function is less than 1, the function should return Argument must be an integer greater than 0.
 
 
-# def number_pattern(n): 
-#     if not isinstance(n, int):
-#         return "Argument must be an integer value."
-#     if n < 1 : 
-#         return "Argument must be an integer greater than 0."    
-#     # loop through n
-#     result = ""
-#     for i in range(1, n+1):
-#         if result == "":
-#             result = str(i)
-#         else : 
-#             result += " " + str(i)
-#     return result 
+def number_pattern(n): 
+    if not isinstance(n, int):
+        return "Argument must be an integer value."
+    if n < 1 : 
+        return "Argument must be an integer greater than 0."    
+    # loop through n
+    result = ""
+    for i in range(1, n+1):
+        if result == "":
+            result = str(i)
+        else : 
+            result += " " + str(i)
+    return result 
 
-# result = number_pattern(4)
-# print(result) 
+result = number_pattern(20)
+print(result) 
 
-programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
-programming_languages.index('Python', 3)
