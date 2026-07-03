@@ -33,6 +33,6 @@ def decrypt(text,shift) :
     return caesar(text,shift,encrypt =False)
 
 encrypted_text = input("Enter your message : ")
-enrypted_shift = int(input("How do you want to cipher the message in shifts : "))
+encrypted_shift = int(input("How do you want to cipher the message in shifts : "))
 decrypted_text = decrypt(encrypted_text, encrypted_shift)
 print(decrypted_text)
