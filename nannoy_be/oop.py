@@ -22,5 +22,3 @@ class Dog:
 
 dog = Dog('Rex')
 print(dog.name)
-
- 
