@@ -24,4 +24,6 @@ dog = Dog('Rex')
 print(dog.name)
  
 
-print(dir(int)) 
+class Menu :
+    dish = "Spam"
+print(Menu.dish)
