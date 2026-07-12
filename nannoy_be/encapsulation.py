@@ -26,15 +26,7 @@ class Wallet :
 
     
 
-
-account = Wallet(1000)
-account.deposit(50)
-print(account)
-
-account_1 = account 
-account_1.withdraw(200)
-print(account_1)
-
+        
 
 class BankAccount:# Class with encapsulation
     def __init__(self, balance):
@@ -51,3 +43,6 @@ account = BankAccount(8000)
 print(account.get_balance()) # Access through method
 
 # print(account.__balance)    # Attribute can't be accessed directly
+
+
+
