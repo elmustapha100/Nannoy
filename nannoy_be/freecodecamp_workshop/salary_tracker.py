@@ -57,7 +57,7 @@ class Employee:
 
         if hasattr(self, '_level') and Employee._base_salaries[self._level] > new_salary:
             raise ValueError (f"Salary must be higher than minimum salary ${Employee._base_salaries[self._level]}.")
-        self._salary = new_salary
+        self.salary = new_salary
         print(f'Salary updated to ${self.salary}.')
 
 charlie_brown = Employee('Charlie Brown', 'trainee')
