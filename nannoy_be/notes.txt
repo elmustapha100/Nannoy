@@ -1,0 +1,13 @@
+important concepts to put down 
+
+The __repr__ method is a special method that is supposed to 
+return a string representation of the object that can be used to instantiate it.
+
+The @property decorator is used to define a getter method , a method used to retrieve 
+the value of an attribute 
+
+A setter is a method used to set the value of an attribute, 
+allowing for validation checks and restrictions.
+You can create a setter using the @propertyName.setter decorator, 
+where propertyName should match the name of the property to set:
+

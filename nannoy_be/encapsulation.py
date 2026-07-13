@@ -46,3 +46,22 @@ print(account.get_balance()) # Access through method
 
 
 
+#getters and setters 
+class Person :
+    def __init__(self,age):
+        self.age = age 
+
+    @property
+    def age(self): #getter method
+        return self.__age 
+
+    @age.setter
+    def age(self,value):
+        if value > 0 :
+            self.__age = value
+        else :
+            raise ValueError    
+
+person = Person(-2)
+print(person.age)                    
+
