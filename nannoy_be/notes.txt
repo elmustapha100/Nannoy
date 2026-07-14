@@ -11,3 +11,6 @@ allowing for validation checks and restrictions.
 You can create a setter using the @propertyName.setter decorator, 
 where propertyName should match the name of the property to set:
 
+What RecursionError: maximum recursion depth exceeded means is that Python kept calling the same function over and over until it hit its safety limit, then stopped execution instead of letting the call stack grow forever. In your traceback, the loop starts when __init__ sets self.health = 100 in game_character_stat_lab.py, which triggers the recursive setter.
+
+To debug this kind of issue, read the traceback from the top and find the first line in your own file that repeats. Then inspect that method and ask one question: “Does this property read or write itself?” If the answer is yes, that is the bug. A quick way to confirm is to trace one value mentally:
