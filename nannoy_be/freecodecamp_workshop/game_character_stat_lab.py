@@ -66,4 +66,3 @@ class GameCharacter :
 hero = GameCharacter('Kratos')      
 print(hero)      
 
-
