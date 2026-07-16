@@ -1,24 +1,3 @@
-# #Inheritance in OOP
-# class Animal :
-#     def __init__(self,name):
-#         self.name = name 
-
-#     def sound(self):
-#         return f"{self.name} makes a sound"
-
-
-# class Dog(Animal) : #child class that inherts the methods and attributes of the animal class 
-#     bark = "Woof!" #class attribute
-
-#     def sound(self):
-#         """returning the output of sound() method and add back the class variable later ,use the super() function"""
-#         base = super().sound()
-#         return f"{base},{self.name} barks {self.bark}" #overriding/replacing  the sound() method in the parent class in the child class to use the class attribute
-
-# class_object = Dog("Bingo")
-# print(class_object.sound())
-            
-#an order processing logic using multiple inheritance 
 # --- Parent Class 1: The Core Base Class ---
 class BaseOrderProcessor:
     """Handles the core business logic of an order."""
@@ -58,5 +37,3 @@ class DigitalOrderProcessor(LoggerMixin, EmailNotifierMixin, BaseOrderProcessor)
 order_processor = DigitalOrderProcessor("98AO1",5000) 
 order_processor.process()
     
-
-
