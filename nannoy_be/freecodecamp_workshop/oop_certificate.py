@@ -63,5 +63,25 @@ class Rectangle :
         return diagonal = (self.width**2 + self.height**2)**0.5
 
     def get_picture(self): 
-        
+        if self.width > 50 or self.height > 50 : 
+            return 'Too big for picture.'
+            
+        picture = ""
+        for i in range(self.height):
+            picture += "*" * self.width + '\n'
+
+        return picture
+
+    def get_amount_inside(self,shape):
+        """the number of times the passed in shape could fit 
+        inside the shape (with no rotations). """
+        horizontal_fit = self.width // shape.width
+        vertical_fit = self.height// shape.height
+
+        return horizontal_fit * vertical_fit
+
+class Square(Rectangle):
+    
+            
+
 
