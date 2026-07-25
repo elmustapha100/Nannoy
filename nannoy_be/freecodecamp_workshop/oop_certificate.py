@@ -33,10 +33,10 @@
 # The Square class should contain the following methods:
 
 # set_width: Overrides the set_width method from the Rectangle class. It should set the width
- and height to the side length.
-# set_height: Overrides the set_height method from the Rectangle class. It should set the width 
-and height to the side length.
-# set_side: Sets the height and width of the square equal to the side length.
+#  and height to the side length.
+# # set_height: Overrides the set_height method from the Rectangle class. It should set the width 
+# and height to the side length.
+# # set_side: Sets the height and width of the square equal to the side length.
 # The Square class should be able to access the Rectangle class methods.
 
 # If an instance of a Square is represented as a string, it should look like: Square(side=9).
@@ -81,6 +81,36 @@ class Rectangle :
         return horizontal_fit * vertical_fit
 
 class Square(Rectangle):
+    def__init__(self,side):
+        super.()__init__(side,side)
+
+    def set_width(self,side):
+        self.width = side 
+        self.height = side 
+
+    def set_height(self,side):
+        self.width = side 
+        self.height = side 
+
+    def set_side(self,side):
+        self.width = side 
+        self.height = side 
+
+rect = Rectangle(10, 5)
+print(rect.get_area())
+rect.set_height(3)
+print(rect.get_perimeter())
+print(rect)
+print(rect.get_picture())
+
+sq = Square(9)
+print(sq.get_area())
+sq.set_side(4)
+print(sq.get_diagonal())
+print(sq)
+print(sq.get_picture())        
+
+
     
             
 
