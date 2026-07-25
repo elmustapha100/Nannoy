@@ -42,76 +42,83 @@
 # If an instance of a Square is represented as a string, it should look like: Square(side=9).
 
 
-class Rectangle :
-    def __init__(self,width,height):
+class Rectangle:
+    def __init__(self, width, height):
         self.width = width
         self.height = height
 
-    def set_width(self):
+    def set_width(self, width):
         self.width = width
 
-    def set_height(self):
+    def set_height(self, height):
         self.height = height
 
     def get_area(self):
-        return area = self.width * self.height
+        return self.width * self.height
 
     def get_perimeter(self):
-        return  perimeter = 2 * (self.width + self.height)        
+        return 2 * (self.width + self.height)
 
     def get_diagonal(self):
-        return diagonal = (self.width**2 + self.height**2)**0.5
+        return (self.width ** 2 + self.height ** 2) ** 0.5
 
-    def get_picture(self): 
-        if self.width > 50 or self.height > 50 : 
-            return 'Too big for picture.'
-            
+    def get_picture(self):
+        if self.width > 50 or self.height > 50:
+            return "Too big for picture."
+
         picture = ""
-        for i in range(self.height):
-            picture += "*" * self.width + '\n'
+        for _ in range(self.height):
+            picture += "*" * self.width + "\n"
 
         return picture
 
-    def get_amount_inside(self,shape):
-        """the number of times the passed in shape could fit 
-        inside the shape (with no rotations). """
+    def get_amount_inside(self, shape):
+        """Return how many times another shape fits inside this one."""
         horizontal_fit = self.width // shape.width
-        vertical_fit = self.height// shape.height
-
+        vertical_fit = self.height // shape.height
         return horizontal_fit * vertical_fit
 
+    def __str__(self):
+        return f"Rectangle(width={self.width}, height={self.height})"
+
+
 class Square(Rectangle):
-    def__init__(self,side):
-        super.()__init__(side,side)
+    def __init__(self, side):
+        super().__init__(side, side)
 
-    def set_width(self,side):
-        self.width = side 
-        self.height = side 
+    def set_width(self, width):
+        self.width = width
+        self.height = width
 
-    def set_height(self,side):
-        self.width = side 
-        self.height = side 
+    def set_height(self, height):
+        self.width = height
+        self.height = height
 
-    def set_side(self,side):
-        self.width = side 
-        self.height = side 
+    def set_side(self, side):
+        self.width = side
+        self.height = side
 
-rect = Rectangle(10, 5)
-print(rect.get_area())
-rect.set_height(3)
-print(rect.get_perimeter())
-print(rect)
-print(rect.get_picture())
-
-sq = Square(9)
-print(sq.get_area())
-sq.set_side(4)
-print(sq.get_diagonal())
-print(sq)
-print(sq.get_picture())        
+    def __str__(self):
+        return f"Square(side={self.width})"
 
 
-    
-            
+if __name__ == "__main__":
+    rect = Rectangle(10, 5)
+    print(rect.get_area())
+    rect.set_height(3)
+    print(rect.get_perimeter())
+    print(rect)
+    print(rect.get_picture())
+
+    sq = Square(9)
+    print(sq.get_area())
+    sq.set_side(4)
+    print(sq.get_diagonal())
+    print(sq)
+    print(sq.get_picture())
+
+
+
+
 
 
