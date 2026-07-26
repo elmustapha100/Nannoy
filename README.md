@@ -1,4 +1,4 @@
-# Nannoy Python Learning Repository
+#Python Learning Repository
 
 This repository contains Python learning materials and practice exercises, organized from beginner fundamentals through lists and sequences, with a separate FreeCodeCamp workshop area.
 
