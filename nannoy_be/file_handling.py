@@ -19,7 +19,7 @@ print(f.readline())
 
 with open("inheritance.py",'r') as f :
    for i in f :
-        print(i)
+    print(i)
 
 # writing to a file
 
