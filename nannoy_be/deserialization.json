@@ -1,0 +1,15 @@
+
+{"name" : "EL Mustapha",
+    "hobbies" : ["travelling","Barca","logic"],
+    "career":["Mathematician","software dev"],
+
+    "friends": [
+        {"name": "Demilade",
+        "hobbies" : ["Gaming","flirting"]
+    },
+    {
+        "name" : "Opemi",
+        "hobbies" : ["K-drama","writing"]
+    }
+    ]
+}

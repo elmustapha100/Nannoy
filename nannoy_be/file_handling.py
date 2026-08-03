@@ -1,4 +1,4 @@
-# #In python, opening a file goes like this 
+# In python, opening a file goes like this 
 # import os
 # f = open("variable.py","r")
 # print(f.read()) #it opens and reads the entire file 

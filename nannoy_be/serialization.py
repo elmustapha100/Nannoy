@@ -24,4 +24,11 @@ user_id = {
 user_id_json = json.dumps(user_id)
 print(user_id_json)
 
+#converting JSON string back to Python 
+user_id_python = json.loads(user_id_json)
+print(user_id_python)
+print(type(user_id_json))
+print(type(user_id_python))
+
+
 
