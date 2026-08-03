@@ -20,5 +20,8 @@ user_id = {
     }
     ]
 }
-with open('serialization.json','w') as write_file :
-    print(json.dump(user_id , write_file))
+# serializing the data into a JSON string format
+user_id_json = json.dumps(user_id)
+print(user_id_json)
+
+
